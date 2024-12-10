@@ -2,7 +2,6 @@
 include('header.php');
 ?>
 
-<html>
 
 <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
@@ -40,5 +39,3 @@ include('header.php');
     </div>
   </div>
 </nav> -->
-
-</html>

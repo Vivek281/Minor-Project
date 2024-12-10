@@ -217,5 +217,19 @@ header{
     color: #162938;
 }
 
+.login-link p{
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+.login-link p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.login-link p a:hover{
+    text-decoration: underline;
+}
+
 
 

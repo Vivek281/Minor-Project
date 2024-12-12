@@ -12,6 +12,12 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
     <body class="sb-nav-fixed">
-        <?php
-        include('top-navbar.php');
-        ?>
+      <?php
+      include('includes/top-nav.php');
+      ?>
+        <div id="layoutSidenav">
+                <?php
+                include('includes/side-nav.php');
+                ?>
+            <div id="layoutSidenav_content">
+                <main>

@@ -1,16 +1,6 @@
-<?php
-include('includes/header.php');
-?>
-        
-                <div id="layoutSidenav">
-<?php
-include('includes/side-navbar.php');
-?>
-
-
-
-            <div id="layoutSidenav_content">
-                <main>
+    <?php
+    include('includes/header.php');
+    ?>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
@@ -563,15 +553,6 @@ include('includes/side-navbar.php');
                             </div>
                         </div>
                     </div>
-                </main>
-
-
-
-
-
-<?php
-include('includes/footer.php');
-?>
-<?php
-include('includes/script.php');
-?>
+    <?php
+    include('includes/footer.php');
+    ?>

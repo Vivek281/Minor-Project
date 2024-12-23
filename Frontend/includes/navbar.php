@@ -11,7 +11,12 @@ include('header.php');
         <a href="#">Categories</a>
         <a href="#">List</a>
         <a href="#">About</a>
-        <button class="btnLogin-popup">Login</button>
+        <button class="btnLogin-popup" onclick="window.location.href='login.php'">Login</button>
+    
     </nav>
 </header>
+
+
+
+
 

@@ -10,7 +10,7 @@ if (isset($_POST['signup_btn'])) {
 
     if ($password == $cnfrmpassword) {
 
-        $hash_password = password_hash($password, PASSWORD_BCRYPT);
+        // $hash_password = password_hash($password, PASSWORD_BCRYPT);
         
         // Check Email
         $checkemail = "SELECT email FROM users WHERE email='$email'";
@@ -25,7 +25,7 @@ if (isset($_POST['signup_btn'])) {
         } 
         else 
         {
-            $user_query = "INSERT INTO users (name, email, password,role) VALUES ('$name', '$email', '$hash_password','User')";
+            $user_query = "INSERT INTO users (name, email, password,role) VALUES ('$name', '$email', '$password','User')";
             $user_query_run = mysqli_query($con, $user_query);
 
             if ($user_query_run) {

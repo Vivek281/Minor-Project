@@ -11,8 +11,15 @@ include('header.php');
         <a href="#">Categories</a>
         <a href="#">List</a>
         <a href="#">About</a>
+        <?php if(isset($_SESSION['auth_user'])):?>
+        <a href=""><?= $_SESSION['auth_user']['user_name'];?></a>
+        <form action="logout.php" method="POST">
+            <button type="submit" name="logout_btn">LogOut</button>
+        </form>
+            <?php else:?>
         <button class="btnLogin-popup" onclick="window.location.href='login.php'">Login</button>
-    
+       
+    <?php endif; ?>
     </nav>
 </header>
 

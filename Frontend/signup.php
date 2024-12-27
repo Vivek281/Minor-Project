@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+if(isset($_SESSION['auth'])){
+
+    if(!isset $_SESSION['message']){
+        $SESSION['message'] = "YOu are already Logged in..!";
+    }
+    header("Location: ../Backend/index.php");
+    exit(0);
+}
 ?>
 
 <!DOCTYPE html>

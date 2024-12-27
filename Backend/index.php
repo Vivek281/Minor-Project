@@ -1,6 +1,10 @@
     <?php
+    session_start();
+    include('authentication.php');
     include('includes/header.php');
     ?>
+
+    <?php include('../Frontend/message.php');?>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">

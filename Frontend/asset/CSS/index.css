@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: #fff;
+    color: black;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -15,13 +15,17 @@ body{
     background-color: #2C2C2C;
     /* background: url("webback.jpg") no-repeat; */
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed; /* Makes the background image fixed */
+    background-position: center; /* Centers the background image */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    
     
 
 }
 
 .body_content{
-    margin-top: 100px;
+    margin-top: 90px;
 }
 
 header{
@@ -33,7 +37,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1A2A44 ;
+    /* background-color: #1A2A44 ; */
     z-index: 99;
 }
 .logo{
@@ -90,18 +94,140 @@ header{
     color: #162938;
 }
 
-.footertxt{
+/* .footertxt{
     display: flex;
     text-align: center;
     justify-content: center;
-    /* position: fixed;
-    bottom: 0; */
+    position: fixed;
+    bottom: 0;
     background-color: #162938;
     width: 100%;
-}
+} */
 
 
 .img1{
-    width: 100%;
-    height:500px
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a translucent background to the divs for better visibility */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    color: black;
+    font-size: large;
+}
+
+.img2{
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a translucent background to the divs for better visibility */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    color: black;
+}
+
+.img3{
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a translucent background to the divs for better visibility */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    color: black;
+}
+
+.img4{
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a translucent background to the divs for better visibility */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    color: black;
+}
+
+.carousel{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.carousel-item img{
+    height: 80vh;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/**footer**/
+
+footer{
+    margin-top: 15px;
+    background-color: #F6F0ED; /* Adds a translucent background to the divs for better visibility */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    color: black;
+}
+.foot-panel1{
+    /* background-color: #37475a;*/
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+.foot-panel1 a{
+    text-decoration: none;
+    color: black;
+}
+
+.foot-panel2{
+    /* background-color:#222f3d;*/
+    color: white; 
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a{
+    display: flex;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+.foot-panel3{
+    /* background-color:#222f3d ;*/
+    color: white; 
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("amazon_logo.png");
+    background-size: cover;
+    height:50px;
+    width: 100px;
+}
+
+.foot-panel4{
+    /* background-color:#0f1111 ; */
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }

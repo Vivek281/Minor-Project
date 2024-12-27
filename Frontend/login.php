@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+if(isset($_SESSION['auth'])){
+
+    if(!isset ($_SESSION['message'])){
+        $SESSION['message'] = "YOu are already Logged in..!";
+    }
+    header("Location: ../Backend/index.php");
+    exit(0);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,8 +19,10 @@ session_start();
     <link rel="stylesheet" href="asset/CSS/app.css">
 </head>
 <body>
-<div class="message"><?php
+<div class="message">
+    <?php
 include("message.php");
+
 ?></div>
 
     <div class="wrapper">

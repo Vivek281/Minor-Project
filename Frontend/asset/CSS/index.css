@@ -12,13 +12,15 @@ body{
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: #2C2C2C;
-    /* background: url("webback.jpg") no-repeat; */
+    /* background-color: #2C2C2C; */
+    background: url("../../img/cool-background.png") no-repeat;
+    background-position-y: -170px;
     background-size: cover;
     background-attachment: fixed; /* Makes the background image fixed */
     background-position: center; /* Centers the background image */
     margin: 0; /* Removes default margin */
     padding: 0; /* Removes default padding */
+    color: black;
     
     
 
@@ -37,7 +39,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #1A2A44 ; */
+    background-color: #CBBAED ;
     z-index: 99;
 }
 .logo{
@@ -122,6 +124,7 @@ header{
     border-radius: 10px; /* Optional: Makes the corners rounded */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
     color: black;
+    font-size: large;
 }
 
 .img3{
@@ -131,6 +134,8 @@ header{
     border-radius: 10px; /* Optional: Makes the corners rounded */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
     color: black;
+    font-size: large;
+
 }
 
 .img4{
@@ -140,18 +145,61 @@ header{
     border-radius: 10px; /* Optional: Makes the corners rounded */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
     color: black;
+    font-size: large;
+
 }
 
-.carousel{
-    margin: 20px;
-    padding: 20px;
+
+
+.image1{
+    background-image: url("../../img/personallib.jpeg");
+    margin: 40px;
+    padding: 40px;
     border-radius: 10px; /* Optional: Makes the corners rounded */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-.carousel-item img{
+    background-size: cover;
     height: 80vh;
-    border-radius: 10px;
+}
+.image2{
+    background-image: url("../../img/webback.jpg");
+    margin: 40px;
+    padding: 40px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    height: 80vh;
+}
+.image3{
+    background-image: url("../../img/discordimg.jpg");
+    margin: 40px;
+    padding: 40px;
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    height: 80vh;
+}
+ .imagehead{
+    width: 100%;
+   margin-top: 230px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+}
+ .imagepar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     color: white;
+}
+ .image3 .imagehead{
+    width: 100%;
+   margin-top: 200px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
 }
 
 
@@ -168,7 +216,7 @@ footer{
     margin: 20px;
     padding: 20px;
     border-radius: 10px; /* Optional: Makes the corners rounded */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /*Optional: Adds a shadow effect */
     color: black;
 }
 .foot-panel1{
@@ -179,6 +227,8 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 0.85rem;
+    font-size: larger;
+    margin-bottom: 20px;
 }
 .foot-panel1 a{
     text-decoration: none;
@@ -215,7 +265,6 @@ ul a{
 }
 
 .logo{
-    background-image: url("amazon_logo.png");
     background-size: cover;
     height:50px;
     width: 100px;
@@ -230,4 +279,93 @@ ul a{
     /* display: flex;
     justify-content: center;
     align-items: center; */
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* About CSS */
+
+
+.about-section {
+    min-height: 100vh;
+    padding: 50px 20px;
+
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-container h1 {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mission, .features, .contact-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Adds a translucent background to the divs for better visibility */
+    margin: 20px;
+    padding: 25px;
+    /* width: 380px; */
+    border-radius: 10px; /* Optional: Makes the corners rounded */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+    color: black;
+}
+
+.about-content h2 {
+    color: #162938;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.features ul {
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+.features li {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-details {
+    margin-top: 15px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #162938;
+    font-size: 24px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1a759f;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
 }

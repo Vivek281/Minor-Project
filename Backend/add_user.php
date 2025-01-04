@@ -3,7 +3,6 @@
     include('authentication.php');
     include('includes/header.php');
     ?>
-
 <div class="container-fluid px-4">
     <h2 class="mt-4">Users</h2>
     <ol class="breadcrumb mb-4">
@@ -20,7 +19,7 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="userCode.php" method="POST">
+                    <form action="user_code.php" method="POST">
                         <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="">Name</label>
@@ -41,14 +40,6 @@
                         <div class="col-md-6 mb-3">
                             <label for="">Confirm Password</label>
                             <input type="password" name="cnfrmpassword" class="form-control" >
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="">Role</label>
-                            <select name="role" require class="form-control">
-                                <option value="">Select Role</option>
-                                <option value="Admin"  >Admin</option>
-                                <option value="User"  >User</option>
-                            </select>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="">Status</label>

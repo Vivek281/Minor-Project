@@ -10,8 +10,6 @@ if(!$con){
   header("Location: ../Error/error.php");
   die();
 }
-else{
-  echo"Connected successfully.";
-}
+
 
 ?>

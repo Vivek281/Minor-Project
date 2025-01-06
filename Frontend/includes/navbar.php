@@ -13,10 +13,13 @@ include('header.php');
     <h2 class="logo">BookVerse</h2>
     <nav class="navigation">
         <a href="index.php">Home</a>
-        <a href="categories.php">Categories</a>
-        <a href="list.php">List</a>
-        <a href="about.php">About</a>
+       
+
+        
              <?php if(isset($_SESSION['auth_user'])):?>
+                <a href="categories.php">Categories</a>
+                <a href="list.php">List</a>
+                <a href="about.php">About</a>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle  user-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><a href=""><?= $_SESSION['auth_user']['user_name'];?></a>
             </button>
@@ -28,9 +31,14 @@ include('header.php');
             </div>
 
             <?php else:?>
+                <a href="about.php">About</a>
         <button class="btnLogin-popup" onclick="window.location.href='login.php'">Login</button>
        
          <?php endif; ?>
+
+        
+
+
     </nav>
 </header>
 

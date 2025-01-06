@@ -45,13 +45,13 @@ include("message.php");
 
 
 
-<div class="book-container">
+    <div class="book-container">
         <h1>Featured Books</h1>
         <div class="book-cards">
             <div class="book-card">
                 <div class="image-placeholder"></div>
                 <div class="book-info">
-                    <h2><a href="">The Great Gatsby</a></h2>
+                    <h2><a href="Books/Novel/the-great-gatsby.pdf">The Great Gatsby</a></h2>
                     <p><em>F. Scott Fitzgerald</em></p>
                     <p>A story of decadence and excess in Jazz Age America.</p>
                     <div class="buttons">
@@ -63,7 +63,7 @@ include("message.php");
             <div class="book-card">
                 <div class="image-placeholder"></div>
                 <div class="book-info">
-                    <h2><a href="">To Kill a Mockingbird</a></h2>
+                    <h2><a href="Books/Novel/TKMB.pdf">To Kill a Mockingbird</a></h2>
                     <p><em>Harper Lee</em></p>
                     <p>A novel about racial injustice and the loss of innocence in the American South.</p>
                     <div class="buttons">
@@ -75,7 +75,7 @@ include("message.php");
             <div class="book-card">
                 <div class="image-placeholder"></div>
                 <div class="book-info">
-                    <h2><a href="">1984</a></h2>
+                    <h2><a href="Books/Novel/1984.pdf">1984</a></h2>
                     <p><em>George Orwell</em></p>
                     <p>A dystopian social science fiction novel and cautionary tale.</p>
                     <div class="buttons">
@@ -87,7 +87,7 @@ include("message.php");
             <div class="book-card">
                 <div class="image-placeholder"></div>
                 <div class="book-info">
-                    <h2><a href="">Pride and Prejudice</a></h2>
+                    <h2><a href="Books/Novel/Pride_and_Prejudice.pdf">Pride and Prejudice</a></h2>
                     <p><em>Jane Austen</em></p>
                     <p>A romantic novel of manners set in Georgian England.</p>
                     <div class="buttons">

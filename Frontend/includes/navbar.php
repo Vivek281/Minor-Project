@@ -14,7 +14,7 @@ include('header.php');
     <nav class="navigation">
         <a href="index.php">Home</a>
         <a href="categories.php">Categories</a>
-        <a href="#">List</a>
+        <a href="list.php">List</a>
         <a href="about.php">About</a>
              <?php if(isset($_SESSION['auth_user'])):?>
         <div class="dropdown">

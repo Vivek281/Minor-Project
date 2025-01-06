@@ -52,6 +52,10 @@ include("message.php");
         <h2>Philosophy</h2>
         <!-- <p>678 books</p> -->
       </div>
+      <div class="category">
+        <h2>Novel</h2>
+        <!-- <p>678 books</p> -->
+      </div>
     </div>
 </div>
 

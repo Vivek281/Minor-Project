@@ -15,7 +15,7 @@
             <div class="card">
                 <div class="card-header">
                     <h4>Add New User
-                        <a href="userManage.php" class="btn btn-danger mb-3 float-end">Cancel</a>
+                        <a href="usermanage.php" class="btn btn-danger mb-3 float-end">Cancel</a>
                     </h4>
                 </div>
                 <div class="card-body">

@@ -5,10 +5,13 @@ include("includes/navbar.php");
 include("message.php");
 ?>
 
-<div class="list-content">
-    <h2>My Reading List</h2>
-
+<?php
+include("../Backend/Admin/config/dbcon.php");
+?>
+<div style="height:100vh;">
+ <h2>Reading List</h2>
 </div>
+
 
 
 

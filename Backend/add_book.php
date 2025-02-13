@@ -19,7 +19,7 @@
                     </h4>
                 </div>
                 <div class="card-body">
-                    <form action="book_code.php" method="POST">
+                    <form action="book_code.php" method="POST" enctype="multipart/form-data" >
                         <div class="row">
                         <div class="col-md-6 mb-3">
                             <label for="">Name</label>
@@ -59,6 +59,10 @@
                             <label for="">Status</label>
                             <input type="checkbox" name="status"  width="70px" height="70px">
                         </div> -->
+                        <div class="col-md-6 mb-3">
+                                <label for="">Image</label>
+                                <input type="file" name="image" class="form-control">
+                        </div>
                         <div class="col-md-12 mb-3">
                             <button type="submit" name="add_btn" class="btn btn-primary">Add Book</button>
                         </div>

@@ -26,7 +26,7 @@ include("message.php");
 
 
 <div class="book-container">
-        <h1><?php echo "$category";?></h1>
+        <h1><?php echo "$category";?> Books</h1>
 <?php
 
     while ($row = mysqli_fetch_assoc($result)) {
@@ -35,14 +35,14 @@ include("message.php");
 
         <div class="book-cards">
             <div class="book-card">
-                <div class="image-placeholder"></div>
+                <img class="image-placeholder" src="img/<?php echo $row["image"]?>"></img>
                 <div class="book-info">
-                    <h2><a href="<?php echo $row["file-location"] ?>"><?php echo $row["name"] ?></a></h2>
+                    <h2><a href="Books/<?php echo $row["file-location"] ?>"><?php echo $row["name"] ?></a></h2>
                     <p><em><?php echo $row["author"] ?></em></p>
                     <p><?php echo $row["description"] ?></p>
                     <div class="buttons">
-                        <a href="#" class="details-btn">View Details</a>
-                        <button class="add-btn">Add to List</button>
+                        <a href="Books/<?php echo $row["file-location"] ?>" class="details-btn">View Details</a>
+                        <!-- <button class="add-btn">Add to List</button> -->
                     </div>
                 </div>
                 

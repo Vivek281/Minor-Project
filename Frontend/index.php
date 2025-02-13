@@ -49,49 +49,49 @@ include("message.php");
         <h1>Featured Books</h1>
         <div class="book-cards">
             <div class="book-card">
-                <div class="image-placeholder"></div>
+            <img class="image-placeholder" src="img/the-great-gatsby.webp"></img>
                 <div class="book-info">
                     <h2><a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/the-great-gatsby.pdf' : 'login.php'; ?>">The Great Gatsby</a></h2>
                     <p><em>F. Scott Fitzgerald</em></p>
                     <p>A story of decadence and excess in Jazz Age America.</p>
                     <div class="buttons">
-                        <a href="#" class="details-btn">View Details</a>
+                        <a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/the-great-gatsby.pdf' : 'login.php'; ?>" class="details-btn">View Details</a>
                         <button class="add-btn">Add to List</button>
                     </div>
                 </div>
             </div>
             <div class="book-card">
-                <div class="image-placeholder"></div>
+            <img class="image-placeholder" src="img/mockingbird.webp"></img>
                 <div class="book-info">
                     <h2><a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/TKMB.pdf' : 'login.php'; ?>">To Kill a Mockingbird</a></h2>
                     <p><em>Harper Lee</em></p>
                     <p>A novel about racial injustice and the loss of innocence in the American South.</p>
                     <div class="buttons">
-                        <a href="#" class="details-btn">View Details</a>
+                        <a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/the-great-gatsby.pdf' : 'login.php'; ?>" class="details-btn">View Details</a>
                         <button class="add-btn">Add to List</button>
                     </div>
                 </div>
             </div>
             <div class="book-card">
-                <div class="image-placeholder"></div>
+            <img class="image-placeholder" src="img/1984.webp"></img>
                 <div class="book-info">
                     <h2><a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/1984.pdf' : 'login.php'; ?>">1984</a></h2>
                     <p><em>George Orwell</em></p>
                     <p>A dystopian social science fiction novel and cautionary tale.</p>
                     <div class="buttons">
-                        <a href="#" class="details-btn">View Details</a>
+                        <a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/the-great-gatsby.pdf' : 'login.php'; ?>" class="details-btn">View Details</a>
                         <button class="add-btn">Add to List</button>
                     </div>
                 </div>
             </div>
             <div class="book-card">
-                <div class="image-placeholder"></div>
+            <img class="image-placeholder" src="img/pride-and-prejudice.jpg"></img>
                 <div class="book-info">
                     <h2><a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/Pride_and_Prejudice.pdf' : 'login.php'; ?>">Pride and Prejudice</a></h2>
                     <p><em>Jane Austen</em></p>
                     <p>A romantic novel of manners set in Georgian England.</p>
                     <div class="buttons">
-                        <a href="#" class="details-btn">View Details</a>
+                        <a href="<?php echo isset($_SESSION['auth_user']) ? 'Books/Novel/the-great-gatsby.pdf' : 'login.php'; ?>" class="details-btn">View Details</a>
                         <button class="add-btn">Add to List</button>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ include("message.php");
 
 <div class="about-section">
     <div class="about-container">
-        <h1>About Us</h1>
+        <h1 style="color:black;">About Us</h1>
         <div class="about-content">
             <div class="mission">
                 <h2>Our Mission</h2>

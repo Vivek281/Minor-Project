@@ -73,6 +73,10 @@
                                     <label for="">File Location</label>
                                     <input type="text" name="file-location" value="<?=$books['file-location'];?>" class="form-control">
                                 </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="">Image</label>
+                                    <input type="file" name="image" value="<?=$books['image'];?>" class="form-control">
+                                </div>
                                 <div class="col-md-12 mb-3">
                                     <button type="submit" name="edit_btn" class="btn btn-primary">Update Data</button>
                                 </div>

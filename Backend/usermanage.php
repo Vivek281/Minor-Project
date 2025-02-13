@@ -60,7 +60,7 @@
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div> <!-- cut-->
             </div>
         </div>
     </div>

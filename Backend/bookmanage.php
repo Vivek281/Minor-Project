@@ -32,6 +32,7 @@
                                     <th scope="col">Description</th>
                                     <th scope="col">Category</th>
                                     <th scope="col">File Location</th>
+                                    <th scope="col">Image</th>
                                     <th scope="col" colspan='2'>Action</th>
                                 </tr>
                             </thead>
@@ -49,6 +50,7 @@
                                         <td><?php echo $row["description"] ?></td>
                                         <td><?php echo $row["category"] ?></td>
                                         <td><?php echo $row["file-location"] ?></td>
+                                        <td><?php echo $row["image"] ?></td>
                                         <td><a href="edit_book.php?id=<?= $row["id"] ;?>" class="btn btn-outline-warning"><i class="fas fa-edit"></i></a></td>
                                         <td>
                                         <form action="book_code.php" method="POST" onsubmit="return confirmDelete();">

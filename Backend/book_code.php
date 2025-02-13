@@ -10,8 +10,14 @@ if (isset($_POST['add_btn'])) {
     $description = ($_POST['description']);
     $category = ($_POST['category']);
     $file_location = ($_POST['file-location']);
-    // $status = $_POST['status'] ==true ? '1':'0';
+  
 
+    // Image upload
+    $target_dir = "../Frontend/img/";
+    $image= $_FILES['image']['name'];
+    $target_file = $target_dir . basename($image);
+
+    
     $checkbook = "SELECT name FROM books WHERE name='$name'";
     $checkbook_run = mysqli_query($con, $checkbook);
 
@@ -24,10 +30,11 @@ if (isset($_POST['add_btn'])) {
         } 
         else 
         {
-            $book_query = "INSERT INTO books (name, author, description, category,`file-location`) VALUES ('$name', '$author', '$description', '$category','$file_location')";
+            $book_query = "INSERT INTO books (name, author, description, category,`file-location`, image) VALUES ('$name', '$author', '$description', '$category','$file_location','$image')";
             $book_query_run = mysqli_query($con, $book_query);
 
             if ($book_query_run) {
+                move_uploaded_file($_FILES['image']['tmp_name'], $target_file);
                 $_SESSION['message'] = "Data Inserted Successfully";
                 header("Location: bookmanage.php");
                 exit(0);
@@ -49,15 +56,27 @@ if(isset($_POST['edit_btn'])) {
     $description = $_POST['description'];
     $category = $_POST['category'];
     $file_location = $_POST['file-location'];
+    //Image update
+    $target_dir = "../Frontend/img/";
+    $image= $_FILES['image']['name'];
+    $target_file = $target_dir . basename($image);
+
 
 
 
     $status = isset($_POST['status']) && $_POST['status'] == true ? '1' : '0';
 
-    $query = "UPDATE books SET name='$name', author='$author', description='$description', category='$category', `file-location`='$file_location' WHERE id='$book_id'";
+    $query = "UPDATE books SET name='$name', author='$author', description='$description', category='$category', `file-location`='$file_location', image='$image' WHERE id='$book_id'";
     $query_run = mysqli_query($con, $query);
 
+
+
+
+
+
     if($query_run) {
+        move_uploaded_file($_FILES['image']['tmp_name'], $target_file);
+
         $_SESSION['message'] = 'Updated Successfully';
         header('Location: bookmanage.php');
         exit(0);
